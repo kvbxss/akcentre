@@ -3,7 +3,6 @@ import Video from "../assets/videos/video.mp4";
 import { Button } from "./ButtonElement.js";
 import styled from "styled-components";
 
-
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 

@@ -16,7 +16,7 @@ const InfoSection = ({
   dark,
   dark2,
   img,
-  alt
+  alt,
 }) => {
   return (
     <>
@@ -29,22 +29,25 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                  primary={primary ? 0 : 0}
-                  dark={dark ? 0 : 0}
-                  dark2={dark2 ? 0 : 0}
-                  >{buttonLabel}</Button>
+                  <Button
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 0 : 0}
+                    dark={dark ? 0 : 0}
+                    dark2={dark2 ? 0 : 0}
+                  >
+                    {buttonLabel}
+                  </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-              <Img src={img} alt={alt} />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
@@ -54,11 +57,9 @@ const InfoSection = ({
   );
 };
 
- export default InfoSection;
+export default InfoSection;
 
-
-
- const InfoContainer = styled.div`
+const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
@@ -67,7 +68,7 @@ const InfoSection = ({
   }
 `;
 
- const InfoWrapper = styled.div`
+const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 860px;
@@ -79,36 +80,37 @@ const InfoSection = ({
   justify-content: center;
 `;
 
- const InfoRow = styled.div`
+const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas :${({imgStart}) => 
+  grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
-  
-  @media screen and (max-width: 768px){
-      grid-template-areas: ${({imgStart}) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: ${({ imgStart }) =>
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
- const Column1 = styled.div`
+const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `;
- const Column2 = styled.div`
+const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
 `;
 
- const TextWrapper = styled.div`
+const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
 `;
 
- const TopLine = styled.p`
+const TopLine = styled.p`
     color: #7189FF;
     font-size: 16px;
     line-height: 16px;
@@ -118,7 +120,7 @@ const InfoSection = ({
     margin-bottom: 16px;
 `;
 
- const Heading = styled.h1`
+const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
@@ -130,7 +132,7 @@ const InfoSection = ({
     }
 `;
 
- const Subtitle = styled.p`
+const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
@@ -138,17 +140,17 @@ const InfoSection = ({
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
- const BtnWrap = styled.div`
+const BtnWrap = styled.div`
   display: flex;
   justify-content: flex;
 `;
 
- const ImgWrap = styled.div`
+const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
 `;
 
- const Img = styled.img`
+const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;

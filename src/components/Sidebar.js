@@ -1,41 +1,40 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from 'gatsby'
-import { FaTimes } from 'gatsby-plugin-fontawesome-css'
+import { Link } from "gatsby";
+import { FaTimes } from "gatsby-plugin-fontawesome-css";
 
 const Sidebar = ({ isOpen, toggle }) => {
-    return (
-      <SidebarContainer isOpen={isOpen} onClick={toggle}>
-        <Icon onClick={toggle}>
-          <CloseIcon />
-        </Icon>
-        <SidebarWrapper>
-          <SidebarMenu>
-            <SidebarLink to="/about" onClick={toggle}>
-              O nas
-            </SidebarLink>
-            <SidebarLink to="/diagnostics" onClick={toggle}>
-              Diagnostyka
-            </SidebarLink>
-            <SidebarLink to="/trainings" onClick={toggle}>
-              Treningi
-            </SidebarLink>
-            <SidebarLink to="contact" onClick={toggle}>
-              Kontakt
-            </SidebarLink>
-          </SidebarMenu>
-          <SideBtnWrap>
-            <SidebarRoute to="/signin">Zaloguj</SidebarRoute>
-          </SideBtnWrap>
-        </SidebarWrapper>
-      </SidebarContainer>
-    );
-  };
-  
-  export default Sidebar;
-  
+  return (
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
+        <CloseIcon />
+      </Icon>
+      <SidebarWrapper>
+        <SidebarMenu>
+          <SidebarLink to="/about" onClick={toggle}>
+            O nas
+          </SidebarLink>
+          <SidebarLink to="/diagnostics" onClick={toggle}>
+            Diagnostyka
+          </SidebarLink>
+          <SidebarLink to="/trainings" onClick={toggle}>
+            Treningi
+          </SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>
+            Kontakt
+          </SidebarLink>
+        </SidebarMenu>
+        <SideBtnWrap>
+          <SidebarRoute to="/signin">Zaloguj</SidebarRoute>
+        </SideBtnWrap>
+      </SidebarWrapper>
+    </SidebarContainer>
+  );
+};
 
- const SidebarContainer = styled.aside`
+export default Sidebar;
+
+const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -53,7 +52,7 @@ const CloseIcon = styled(FaTimes)`
   color: #fff;
 `;
 
- const Icon = styled.div`
+const Icon = styled.div`
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
@@ -78,7 +77,7 @@ const SidebarMenu = styled.ul`
     grid-template-rows: repeat(6, 60px);
   }
 `;
- const SidebarLink = styled(Link)`
+const SidebarLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +90,7 @@ const SidebarMenu = styled.ul`
   cursor: pointer;
 
   &:hover {
-    color: #7189FF;
+    color: #7189ff;
     transition: 0.2s ease-in-out;
   }
 `;
@@ -102,7 +101,7 @@ const SideBtnWrap = styled.div`
 
 const SidebarRoute = styled(Link)`
   border-radius: 50px;
-  background: #7189FF;
+  background: #7189ff;
   white-space: nowrap;
   padding: 16px 64px;
   color: #010606;
@@ -115,7 +114,7 @@ const SidebarRoute = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #C1CEFE;
+    background: #c1cefe;
     color: #010606;
   }
 `;

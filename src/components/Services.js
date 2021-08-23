@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Icon1 from '../assets/images/svg-5.svg'
-import Icon2 from '../assets/images/svg-6.svg'
-import Icon3 from '../assets/images/svg-7.svg'
-
+import Icon1 from "../assets/images/svg-5.svg";
+import Icon2 from "../assets/images/svg-6.svg";
+import Icon3 from "../assets/images/svg-7.svg";
 
 const Services = () => {
   return (
@@ -19,7 +18,8 @@ const Services = () => {
           <ServicesIcon src={Icon2} />
           <ServicesH2>KruKam</ServicesH2>
           <ServicesP>
-            Współpracujemy z marką KruKam, dzięki czemu możecie zakupić u nas ich zdrową żywność.
+            Współpracujemy z marką KruKam, dzięki czemu możecie zakupić u nas
+            ich zdrową żywność.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
@@ -32,9 +32,9 @@ const Services = () => {
   );
 };
 
- export default Services;
+export default Services;
 
- const ServicesContainer = styled.div`
+const ServicesContainer = styled.div`
   height: 800px;
   dipslay: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@ const Services = () => {
   }
 `;
 
- const ServicesWrapper = styled.div`
+const ServicesWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -70,32 +70,32 @@ const Services = () => {
   }
 `;
 
- const ServicesCard = styled.div`
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 10px;
-    max-height: 340px;
-    padding: 30px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    transition: all 0.2 ease-in-out;
+const ServicesCard = styled.div`
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  max-height: 340px;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2 ease-in-out;
 
-    &:hover {
-        transform: scale(1.02);
-        transition: all 0.2 ease-in-out;
-        cursor:pointer;
-    }
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2 ease-in-out;
+    cursor: pointer;
+  }
 `;
 
- const ServicesIcon = styled.img`
+const ServicesIcon = styled.img`
   height: 160px;
   width: 160px;
   margin-bottom: 10px;
 `;
 
- const ServicesH1 = styled.h1`
+const ServicesH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 64px;
@@ -106,12 +106,12 @@ const Services = () => {
   }
 `;
 
- const ServicesH2 = styled.h2`
+const ServicesH2 = styled.h2`
   font-size: 1rem;
   text-align: 10px;
 `;
 
- const ServicesP = styled.p`
+const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
 `;

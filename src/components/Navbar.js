@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { FaBars as Bars} from 'gatsby-plugin-fontawesome-css';
+import { FaBars as Bars } from "gatsby-plugin-fontawesome-css";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -47,10 +47,9 @@ const Navbar = ({ toggle }) => {
   );
 };
 
- export default Navbar;
+export default Navbar;
 
-
- const Nav = styled.nav`
+const Nav = styled.nav`
   background: #000;
   height: 80px;
   // margin-top: -80px;
@@ -67,7 +66,7 @@ const Navbar = ({ toggle }) => {
   }
 `;
 
- const NavbarContainer = styled.div`
+const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -77,7 +76,7 @@ const Navbar = ({ toggle }) => {
   max-width: 1100px;
 `;
 
- const NavLogo = styled(Link)`
+const NavLogo = styled(Link)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
@@ -89,7 +88,7 @@ const Navbar = ({ toggle }) => {
   text-decoration: none;
 `;
 
- const MobileIcon = styled.div`
+const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -104,7 +103,7 @@ const Navbar = ({ toggle }) => {
   }
 `;
 
- const NavMenu = styled.ul`
+const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
@@ -116,11 +115,11 @@ const Navbar = ({ toggle }) => {
   }
 `;
 
- const NavItem = styled.li`
+const NavItem = styled.li`
   height: 80px;
 `;
 
- const NavLinks = styled(Link)`
+const NavLinks = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
@@ -134,7 +133,7 @@ const Navbar = ({ toggle }) => {
   }
 `;
 
- const NavBtn = styled.nav`
+const NavBtn = styled.nav`
   display: fles;
   align-items: center;
 
@@ -143,7 +142,7 @@ const Navbar = ({ toggle }) => {
   }
 `;
 
- const NavBtnLink = styled(Link)`
+const NavBtnLink = styled(Link)`
   border-radius: 50px;
   background: #7189ff;
   white-space: nowrap;
@@ -162,4 +161,3 @@ const Navbar = ({ toggle }) => {
     color: #010606;
   }
 `;
-

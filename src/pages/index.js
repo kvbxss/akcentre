@@ -1,32 +1,38 @@
-import React, {useState} from 'react';
-import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
-import HeroSection from '../components/HeroSection';
-import InfoSection from '../components/InfoSection';
-import { homeOBJfour, homeOBJone, homeOBJthree, homeOBJtwo } from '../data/InfoData';
-import Services from '../components/Services';
+import React, { useState } from "react";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import InfoSection from "../components/InfoSection";
+import {
+  homeOBJfour,
+  homeOBJone,
+  homeOBJthree,
+  homeOBJtwo,
+} from "../data/InfoData";
+import { GlobalStyle } from "../components/styles/GlobalStyles"
+import Services from "../components/Services";
 
 const Home = () => {
-    const[isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    };
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
-
-    return (
-        <>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle}/>
-            <HeroSection />
-            <InfoSection {...homeOBJone} />
-            <InfoSection {...homeOBJtwo} />
-            <InfoSection {...homeOBJthree} />
-            <Services />
-            <InfoSection {...homeOBJfour} />
-            
-        </>
-    )
-}
+  return (
+    <>
+    <GlobalStyle>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <HeroSection />
+      <InfoSection {...homeOBJone} />
+      <InfoSection {...homeOBJtwo} />
+      <InfoSection {...homeOBJthree} />
+      <Services />
+      <InfoSection {...homeOBJfour} />
+      </GlobalStyle>
+    </>
+  );
+};
 
 export default Home;
