@@ -9,7 +9,6 @@ import {
   homeOBJthree,
   homeOBJtwo,
 } from "../data/InfoData";
-import { GlobalStyle } from "../components/styles/GlobalStyles"
 import Services from "../components/Services";
 
 const Home = () => {
@@ -21,7 +20,7 @@ const Home = () => {
 
   return (
     <>
-    <GlobalStyle>
+    
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
@@ -30,7 +29,7 @@ const Home = () => {
       <InfoSection {...homeOBJthree} />
       <Services />
       <InfoSection {...homeOBJfour} />
-      </GlobalStyle>
+      
     </>
   );
 };

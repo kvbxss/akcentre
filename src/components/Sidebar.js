@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { FaTimes } from "gatsby-plugin-fontawesome-css";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -48,10 +47,9 @@ const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
-const CloseIcon = styled(FaTimes)`
+const CloseIcon = styled.div`
   color: #fff;
-`;
-
+`
 const Icon = styled.div`
   position: absolute;
   top: 1.2rem;

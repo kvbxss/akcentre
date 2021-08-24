@@ -1,3 +1,8 @@
+require("dotenv").config()
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
     siteMetadata: {
       title: `mncentrum`,
@@ -7,6 +12,7 @@ module.exports = {
     },
     plugins: [
       `gatsby-plugin-react-helmet`,
+      
       `gatsby-plugin-styled-components`,
       {
         resolve: `gatsby-source-filesystem`,
@@ -14,7 +20,14 @@ module.exports = {
           name: `images`,
           path: `${__dirname}/src/assets/images`,
         },
-      },
+      
+        resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.wgw5hpb,
+      }
+    }},
+    
       `gatsby-transformer-sharp`,
       `gatsby-plugin-fontawesome-css`,
       `gatsby-plugin-sharp`,

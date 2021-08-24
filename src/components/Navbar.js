@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { FaBars as Bars } from "gatsby-plugin-fontawesome-css";
+
 
 const Navbar = ({ toggle }) => {
   return (
@@ -16,7 +16,7 @@ const Navbar = ({ toggle }) => {
             />
           </NavLogo>
           <MobileIcon onClick={toggle}>
-            <Bars />
+            
           </MobileIcon>
           <NavMenu>
             <NavItem>
@@ -43,7 +43,7 @@ const Navbar = ({ toggle }) => {
           </NavBtn>
         </NavbarContainer>
       </Nav>
-    </>
+      </>
   );
 };
 
