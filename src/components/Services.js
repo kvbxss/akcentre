@@ -7,12 +7,15 @@ import Icon3 from "../assets/images/svg-7.svg";
 const Services = () => {
   return (
     <ServicesContainer id="services">
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>Nasze Usługi</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
           <ServicesH2>#nomercy</ServicesH2>
-          <ServicesP>Nasze motto wzięło się z podejścia</ServicesP>
+          <ServicesP>
+            Naszym motto jest #nomercy, ale to nie oznacza, że wyjdziesz ledwo
+            żywy z sali…
+          </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
@@ -109,9 +112,11 @@ const ServicesH1 = styled.h1`
 const ServicesH2 = styled.h2`
   font-size: 1rem;
   text-align: 10px;
+  color: #fff;
 `;
 
 const ServicesP = styled.p`
+  color: #fff;
   font-size: 1rem;
   text-align: center;
 `;

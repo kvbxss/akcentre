@@ -14,6 +14,7 @@ export const homeOBJone = {
   dark: true,
   primary: true,
   darkText: false,
+  Link: '/info'
 };
 
 export const homeOBJtwo = {
@@ -22,13 +23,13 @@ export const homeOBJtwo = {
   lightText: false,
   lightTextDesc: false,
   topLine: "Diagnostyka",
-  headline: "Poprzez diagnostykę ",
+  headline: "Daj się naprawić",
   description:
     "Wybierz dogodny dla siebie termin i umów się na darmową konsultację z trenerem!",
   buttonLabel: "Umów się",
   imgStart: true,
   img: require("../assets/images/svg-2.svg").default,
-  alt: "disgnostics",
+  alt: "diagnostics",
   dark: false,
   primary: false,
   darkText: true,
@@ -46,10 +47,11 @@ export const homeOBJthree = {
   buttonLabel: "Wybierz trening",
   imgStart: false,
   img: require("../assets/images/svg-3.svg").default,
-  alt: "disgnostics",
+  alt: "trainings",
   dark: true,
   primary: true,
   darkText: false,
+  
 };
 
 export const homeOBJfour = {
@@ -63,8 +65,9 @@ export const homeOBJfour = {
   buttonLabel: "Kontakt",
   imgStart: true,
   img: require("../assets/images/svg-4.svg").default,
-  alt: "contatct",
+  alt: "contact",
   dark: false,
   primary: false,
   darkText: true,
+  Link : '/contact'
 };

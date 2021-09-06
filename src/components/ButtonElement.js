@@ -15,7 +15,7 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 0.2 ease-in-out;
-
+  text-decoration: none;
   &:hover {
     transition: all 0.2 ease-in-out;
     background: ${({ primary }) => (primary ? "#fff" : "#C1CEFE")};

@@ -10,6 +10,8 @@ import {
   homeOBJtwo,
 } from "../data/InfoData";
 import Services from "../components/Services";
+import { GlobalStyle } from "../components/styles/GlobalStyles";
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +19,10 @@ const Home = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-
+  
   return (
     <>
-    
+    <GlobalStyle></GlobalStyle>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
@@ -28,10 +30,11 @@ const Home = () => {
       <InfoSection {...homeOBJtwo} />
       <InfoSection {...homeOBJthree} />
       <Services />
-      <InfoSection {...homeOBJfour} />
-      
+      <InfoSection {...homeOBJfour} />    
     </>
-  );
+    
+  ); 
 };
+
 
 export default Home;

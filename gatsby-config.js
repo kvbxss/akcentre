@@ -3,16 +3,29 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+
 module.exports = {
+  
     siteMetadata: {
       title: `mncentrum`,
       description: `Treningi Personalne oraz Medyczne`,
       author: `@gatsbyjs`,
       siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+      social: [{
+        url: 'https://www.instagram.com/mn_centrum/',
+        name: 'Instagram'
+      }]
     },
     plugins: [
       `gatsby-plugin-react-helmet`,
-      
+      {
+        resolve: `gatsby-theme-contact`,
+        options: {
+          contactPath: '/contact',
+          successPath: '/thanks'
+        }
+      },
+      `gatsby-plugin-preload-fonts`,
       `gatsby-plugin-styled-components`,
       {
         resolve: `gatsby-source-filesystem`,
@@ -24,7 +37,7 @@ module.exports = {
         resolve: "gatsby-plugin-web-font-loader",
       options: {
         typekit: {
-          id: process.env.wgw5hpb,
+          id: process.env.TYPEKIT_ID,
       }
     }},
     
@@ -54,16 +67,18 @@ module.exports = {
         resolve: `gatsby-plugin-google-fonts`,
         options: {
           fonts: [
-            `amatic sc`,
-            `muli:400,400i,700,700i`
+            `limelight`,
+            `open sans\:300,400,400i,700` // you can also specify font weights and styles
           ],
-          display: "swap",
+          display: 'swap'
         },
       },
       `gatsby-plugin-gatsby-cloud`,
+      
       // this (optional) plugin enables Progressive Web App + Offline functionality
       // To learn more, visit: https://gatsby.dev/offline
       // `gatsby-plugin-offline`,
     ],
   }
+
   

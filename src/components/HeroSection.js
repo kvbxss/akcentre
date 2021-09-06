@@ -19,7 +19,7 @@ const HeroSection = () => {
         <HeroH1>Treningi Personalne oraz Medyczne</HeroH1>
         <HeroP>Już dziś umów się na wizytę z wyprzedzeniem!</HeroP>
         <HeroBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button to="/signin" onMouseEnter={onHover} onMouseLeave={onHover}>
             Zapisz się! {hover}
           </Button>
         </HeroBtnWrapper>
@@ -95,7 +95,6 @@ const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
   text-align: center;
-
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
-
 const Navbar = ({ toggle }) => {
   return (
     <>
@@ -15,35 +14,32 @@ const Navbar = ({ toggle }) => {
               width={125}
             />
           </NavLogo>
-          <MobileIcon onClick={toggle}>
-            
-          </MobileIcon>
+          <MobileIcon onClick={toggle}>{/* <Bars />  */}</MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">O nas</NavLinks>
+              <NavLinks to="#about">O nas</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="diagnostics">Diagnostyka</NavLinks>
+              <NavLinks to="#diagnostics">Diagnostyka</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="trainings">Treningi</NavLinks>
-            </NavItem>
-            {/* <NavItem>
-              <NavLinks to="media">Media</NavLinks>
-            </NavItem> */}
-            <NavItem>
-              <NavLinks to="contact">Kontakt</NavLinks>
+              <NavLinks to="#trainings">Treningi</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="signup">Załóż konto</NavLinks>
+              <NavLinks to="#services">Usługi</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="#contact">Kontakt</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Zaloguj się</NavBtnLink>
+            <NavBtnLink to="#home">
+              Witaj!
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
-      </>
+    </>
   );
 };
 
@@ -52,7 +48,7 @@ export default Navbar;
 const Nav = styled.nav`
   background: #000;
   height: 80px;
-  // margin-top: -80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +99,21 @@ const MobileIcon = styled.div`
   }
 `;
 
+// const Bars = styled.div`
+//   display: none;
+//   color: #fff;
+
+//   @media screen and (max-width: 768px) {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     transform: translate(-100%, 75%);
+//     font-size: 1.8rem;
+//     cursor: pointer;
+//   }
+// `;
+
 const NavMenu = styled.ul`
   display: flex;
   align-items: center;
@@ -134,7 +145,7 @@ const NavLinks = styled(Link)`
 `;
 
 const NavBtn = styled.nav`
-  display: fles;
+  display: flex;
   align-items: center;
 
   @media screen and (max-width: 768px) {
