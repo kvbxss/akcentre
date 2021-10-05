@@ -3,32 +3,53 @@ import styled from "styled-components";
 import Icon1 from "../assets/images/svg-5.svg";
 import Icon2 from "../assets/images/svg-6.svg";
 import Icon3 from "../assets/images/svg-7.svg";
+import Icon4 from "../assets/images/svg-8.svg";
+import Icon5 from "../assets/images/svg-9.svg";
+import Icon6 from "../assets/images/svg-10.svg";
+
 
 const Services = () => {
   return (
     <ServicesContainer id="services">
       <ServicesH1>Nasze Usługi</ServicesH1>
       <ServicesWrapper>
-        <ServicesCard>
+      <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>#nomercy</ServicesH2>
+          <ServicesH2>Gym Kids</ServicesH2>
           <ServicesP>
-            Naszym motto jest #nomercy, ale to nie oznacza, że wyjdziesz ledwo
-            żywy z sali…
+           Zajęcia gimnastyczne dla dzieci 🤸🏻‍♀️
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>KruKam</ServicesH2>
+          <ServicesH2>Treningi Personalne</ServicesH2>
           <ServicesP>
-            Współpracujemy z marką KruKam, dzięki czemu możecie zakupić u nas
-            ich zdrową żywność.
+           Po prostu #nomercy. 
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
           <ServicesH2>Treningi Medyczne</ServicesH2>
           <ServicesP></ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon4} />
+          <ServicesH2>Zajęcia Grupowe</ServicesH2>
+          <ServicesP>
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon5} />
+          <ServicesH2>Diagnostyka</ServicesH2>
+          <ServicesP>
+          i konsultacje fizjoterapeutyczne
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon6} />
+          <ServicesH2>Neurotreningi</ServicesH2>
+          <ServicesP>
+          </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
@@ -38,7 +59,7 @@ const Services = () => {
 export default Services;
 
 const ServicesContainer = styled.div`
-  height: 800px;
+  height: 1000px;
   dipslay: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,11 +67,11 @@ const ServicesContainer = styled.div`
   background: #010606;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    height: 2200px;
   }
 
   @media screenand (max-width: 480px) {
-    height: 1300px;
+    height: 2600px;
   }
 `;
 
@@ -84,6 +105,7 @@ const ServicesCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2 ease-in-out;
+  margin-bottom: 32px;
 
   &:hover {
     transform: scale(1.02);
@@ -112,11 +134,12 @@ const ServicesH1 = styled.h1`
 const ServicesH2 = styled.h2`
   font-size: 1rem;
   text-align: 10px;
-  color: #fff;
+  color: black;
+  
 `;
 
 const ServicesP = styled.p`
-  color: #fff;
+  color: black;
   font-size: 1rem;
   text-align: center;
 `;

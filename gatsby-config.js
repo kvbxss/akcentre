@@ -14,6 +14,9 @@ module.exports = {
       social: [{
         url: 'https://www.instagram.com/mn_centrum/',
         name: 'Instagram'
+      },{
+        url: 'https://www.facebook.com/MNcentrum',
+        name : 'Facebook'
       }]
     },
     plugins: [
@@ -26,6 +29,7 @@ module.exports = {
         }
       },
       `gatsby-plugin-preload-fonts`,
+      `gatsby-plugin-transition-link`,
       `gatsby-plugin-styled-components`,
       {
         resolve: `gatsby-source-filesystem`,

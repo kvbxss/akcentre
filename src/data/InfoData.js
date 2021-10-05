@@ -6,7 +6,7 @@ export const homeOBJone = {
   topLine: "O nas",
   headline: "Kto wchodzi w skład MNcentrum?",
   description:
-    "Powstaliśmy z myślą o Was, aby otoczyć Was kompleksowym podejściem treningowym i medycznym. Naszym motto jest #nomercy, ale to nie oznacza, że wyjdziesz ledwo żywy z sali…",
+    "Powstaliśmy z myślą o Was, aby otoczyć Was kompleksowym podejściem treningowym i medycznym. Przede wszystkim dbamy o to, abyś czuł się komfortowo trenując w pojedynkę z nami, bez tłumów i zgiełku",
   buttonLabel: "Poznaj nas",
   imgStart: false,
   img: require("../assets/images/svg-1.svg").default,
@@ -26,7 +26,7 @@ export const homeOBJtwo = {
   headline: "Daj się naprawić",
   description:
     "Wybierz dogodny dla siebie termin i umów się na darmową konsultację z trenerem!",
-  buttonLabel: "Umów się",
+  // buttonLabel: "Umów się",
   imgStart: true,
   img: require("../assets/images/svg-2.svg").default,
   alt: "diagnostics",
@@ -44,7 +44,7 @@ export const homeOBJthree = {
   headline: "Trening to podstawa",
   description:
     "Wybierz odpowiedni dla siebie trening i umów się na określoną godzinę.",
-  buttonLabel: "Wybierz trening",
+  // buttonLabel: "Wybierz trening",
   imgStart: false,
   img: require("../assets/images/svg-3.svg").default,
   alt: "trainings",

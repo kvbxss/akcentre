@@ -11,6 +11,7 @@ import {
 } from "../data/InfoData";
 import Services from "../components/Services";
 import { GlobalStyle } from "../components/styles/GlobalStyles";
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
       <InfoSection {...homeOBJthree} />
       <Services />
       <InfoSection {...homeOBJfour} />    
+      <Footer />
     </>
     
   ); 

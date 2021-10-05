@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import TransitionLink from "gatsby-plugin-transition-link"
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
@@ -14,7 +17,9 @@ const Navbar = ({ toggle }) => {
               width={125}
             />
           </NavLogo>
-          <MobileIcon onClick={toggle}>{/* <Bars />  */}</MobileIcon>
+          <MobileIcon onClick={toggle}>
+            <FontAwesomeIcon icon={faBars} />
+          </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks to="#about">O nas</NavLinks>
@@ -88,7 +93,7 @@ const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
@@ -96,23 +101,11 @@ const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+    
+    margin-top: 10px;
+
   }
 `;
-
-// const Bars = styled.div`
-//   display: none;
-//   color: #fff;
-
-//   @media screen and (max-width: 768px) {
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     transform: translate(-100%, 75%);
-//     font-size: 1.8rem;
-//     cursor: pointer;
-//   }
-// `;
 
 const NavMenu = styled.ul`
   display: flex;
@@ -139,7 +132,7 @@ const NavLinks = styled(Link)`
   height: 100%;
   cursor: pointer;
 
-  &:active {
+  &.active {
     border-bottom: 3px solid #7189ff;
   }
 `;

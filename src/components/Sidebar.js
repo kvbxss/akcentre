@@ -1,30 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
-        <CloseIcon />
+        <FontAwesomeIcon icon={faTimes} color ='white'/>
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink to="#about" onClick={toggle}>
             O nas
           </SidebarLink>
-          <SidebarLink to="diagnostics" onClick={toggle}>
+          <SidebarLink to="#diagnostics" onClick={toggle}>
             Diagnostyka
           </SidebarLink>
-          <SidebarLink to="trainings" onClick={toggle}>
+          <SidebarLink to="#trainings" onClick={toggle}>
             Treningi
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink to="#contact" onClick={toggle}>
             Kontakt
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Zaloguj</SidebarRoute>
+          <SidebarRoute to="#home">Witaj!</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

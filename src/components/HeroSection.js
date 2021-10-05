@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Video from "../assets/videos/video.mp4";
-import { Button } from "./ButtonElement.js";
 import styled from "styled-components";
 
 const HeroSection = () => {
@@ -18,11 +17,6 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Treningi Personalne oraz Medyczne</HeroH1>
         <HeroP>Już dziś umów się na wizytę z wyprzedzeniem!</HeroP>
-        <HeroBtnWrapper>
-          <Button to="/signin" onMouseEnter={onHover} onMouseLeave={onHover}>
-            Zapisz się! {hover}
-          </Button>
-        </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
   );
@@ -118,11 +112,4 @@ const HeroP = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 18px;
   }
-`;
-
-const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
