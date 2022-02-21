@@ -8,7 +8,7 @@ const Footer = ({children}) => {
         <FooterContainer>
       <FooterLinksWrapper>
         <FooterDesc>
-          <h1>mncentrum</h1>
+          <h1>AKcentrum</h1>
           <p>
             Naszym motto jest #nomercy, ale to nie oznacza, że wyjdziesz ledwo
             żywy z sali… 

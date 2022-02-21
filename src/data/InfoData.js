@@ -26,13 +26,14 @@ export const homeOBJtwo = {
   headline: "Daj się naprawić",
   description:
     "Wybierz dogodny dla siebie termin i umów się na darmową konsultację z trenerem!",
-  // buttonLabel: "Umów się",
+  buttonLabel: "Umów się",
   imgStart: true,
   img: require("../assets/images/svg-2.svg").default,
   alt: "diagnostics",
   dark: false,
   primary: false,
   darkText: true,
+  Link: '/BookingCalendar'
 };
 
 export const homeOBJthree = {

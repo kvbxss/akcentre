@@ -3,10 +3,10 @@ import { Link } from "gatsby";
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? "#7189FF" : "#7189FF")};
+  background: ${({ primary }) => (primary ? "#b9d3e2" : "#7189FF")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#7189FF" : "#fff")};
+  color: ${({ dark }) => (dark ? "#b9d3e2" : "#fff")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;

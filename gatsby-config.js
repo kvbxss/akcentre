@@ -7,15 +7,15 @@ require("dotenv").config({
 module.exports = {
   
     siteMetadata: {
-      title: `mncentrum`,
+      title: `AKcentrum`,
       description: `Treningi Personalne oraz Medyczne`,
       author: `@gatsbyjs`,
       siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
       social: [{
-        url: 'https://www.instagram.com/mn_centrum/',
+        url: 'https://www.instagram.com',
         name: 'Instagram'
       },{
-        url: 'https://www.facebook.com/MNcentrum',
+        url: 'https://www.facebook.com',
         name : 'Facebook'
       }]
     },
