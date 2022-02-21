@@ -3,7 +3,11 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import TransitionLink from "gatsby-plugin-transition-link"
+import logo from '../assets/images/logo.png'
+import Swal from 'sweetalert2'
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal)
 
 const Navbar = ({toggle}) => {
   return (
@@ -12,7 +16,7 @@ const Navbar = ({toggle}) => {
         <NavbarContainer>
           <NavLogo to="/">
             <img
-              src="https://www.mncentrum.pl/wp-content/uploads/2020/09/Logo_centrum_11.png"
+              src={logo}
               alt="logo"
               width={125}
             />
@@ -38,9 +42,21 @@ const Navbar = ({toggle}) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="#home">
-              Witaj!
-            </NavBtnLink>
+            MySwal.fire({
+              title: <p>Cześć!</p>,
+              text: 'Witaj na naszej stronie.'
+              imageUrl: '',
+              imageWidth: 400,
+              imageHeight: 200,
+              imageAlt: 'Custom image',
+              didOpen: () => {
+
+              }
+              MySwal.clickConfirm()
+            }
+            ).then(() => {
+              return MySwal.fire(<p>elegancko</p>)
+            })
           </NavBtn>
         </NavbarContainer>
       </Nav>
@@ -53,7 +69,7 @@ export default Navbar;
 const Nav = styled.nav`
   background: #000;
   height: 80px;
-  margin-top: -80px;
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,7 +167,7 @@ const NavBtnLink = styled(Link)`
   background: #7189ff;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #b9d3e2;
   font-size: 16px;
   outline: none;
   border: none;
@@ -162,6 +178,6 @@ const NavBtnLink = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: #b9d3e2;
   }
 `;
