@@ -1,8 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import tomjerry from "../assets/images/tom&jerry.gif";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import Swal from "sweetalert2/src/sweetalert2.js";
+import withReactContent from "sweetalert2-react-content";
+import '@sweetalert2/theme-dark/dark.css';
+
+
+const MySwal=withReactContent(Swal);
+
+const launchAlert= () => {
+     MySwal.fire({          
+      title: <p>Witaj na stronie AKcentrum. 
+        <p></p>
+        Rozgość się.</p>,
+      footer: 'Copyright 2022',
+      confirmButtonText: <h3>Okej!</h3>,
+      confirmButtonColor: '#7189ff',
+      width: 600,
+      padding: '3em',
+      color: '#7189ff',
+      iconHtml: <img src={tomjerry} alt="xd" height={150} width= {400}/>,
+    })
+}
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -26,7 +48,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="#home">Witaj!</SidebarRoute>
+          <SidebarRoute to="#home" onClick={launchAlert}>Witaj!</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

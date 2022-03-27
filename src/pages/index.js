@@ -14,12 +14,16 @@ import { GlobalStyle } from "../components/styles/GlobalStyles";
 import Footer from "../components/Footer";
 
 
+
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+ 
   
   return (
     <>

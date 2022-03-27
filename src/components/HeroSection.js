@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Video from "../assets/videos/video.mp4";
 import styled from "styled-components";
+import logo from "../assets/images/logo.png";
 
 const HeroSection = () => {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
-  const onHover = () => {
-    setHover(!hover);
-  };
+  // const onHover = () => {
+  //   setHover(!hover);
+  // };
 
   return (
     <HeroContainer id="home">
@@ -15,7 +16,10 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Treningi Personalne oraz Medyczne</HeroH1>
+        <HeroH1></HeroH1>
+        <p></p>
+        <LogoH1><img src={logo} size={'80%'}alt='xd'/></LogoH1>
+        <p></p>
         <HeroP>Już dziś umów się na wizytę z wyprzedzeniem!</HeroP>
       </HeroContent>
     </HeroContainer>
@@ -89,6 +93,18 @@ const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+`;
+
+const LogoH1 = styled.div`
+text-align: center;
+align-items: center;
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }

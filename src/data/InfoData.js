@@ -4,7 +4,7 @@ export const homeOBJone = {
   lightText: true,
   lightTextDesc: true,
   topLine: "O nas",
-  headline: "Kto wchodzi w skład MNcentrum?",
+  headline: "Kim jesteśmy?",
   description:
     "Powstaliśmy z myślą o Was, aby otoczyć Was kompleksowym podejściem treningowym i medycznym. Przede wszystkim dbamy o to, abyś czuł się komfortowo trenując w pojedynkę z nami, bez tłumów i zgiełku",
   buttonLabel: "Poznaj nas",
@@ -17,41 +17,41 @@ export const homeOBJone = {
   Link: '/info'
 };
 
-export const homeOBJtwo = {
+export const homeOBJthree = {
   id: "diagnostics",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: "Diagnostyka",
   headline: "Daj się naprawić",
   description:
     "Wybierz dogodny dla siebie termin i umów się na darmową konsultację z trenerem!",
   buttonLabel: "Umów się",
-  imgStart: true,
+  imgStart: false,
   img: require("../assets/images/svg-2.svg").default,
   alt: "diagnostics",
-  dark: false,
-  primary: false,
-  darkText: true,
+  dark:true,
+  primary: true,
+  darkText: false,
   Link: '/BookingCalendar'
 };
 
-export const homeOBJthree = {
+export const homeOBJtwo = {
   id: "trainings",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "Treningi",
   headline: "Trening to podstawa",
   description:
     "Wybierz odpowiedni dla siebie trening i umów się na określoną godzinę.",
-  // buttonLabel: "Wybierz trening",
-  imgStart: false,
+  buttonLabel: "Wybierz trening",
+  imgStart: true,
   img: require("../assets/images/svg-3.svg").default,
   alt: "trainings",
-  dark: true,
-  primary: true,
-  darkText: false,
+  dark: false,
+  primary: false,
+  darkText: true,
   
 };
 

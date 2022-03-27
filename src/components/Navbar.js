@@ -1,25 +1,38 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import logo from '../assets/images/logo.png'
-import Swal from 'sweetalert2'
+import tomjerry from "../assets/images/tom&jerry.gif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import logo from "../assets/images/logo.png";
+import Swal from "sweetalert2/src/sweetalert2.js";
 import withReactContent from "sweetalert2-react-content";
+import '@sweetalert2/theme-dark/dark.css';
 
-const MySwal = withReactContent(Swal)
+const MySwal=withReactContent(Swal);
 
-const Navbar = ({toggle}) => {
+const launchAlert= () => {
+     MySwal.fire({          
+      title: <p>Witaj na stronie AKcentrum. 
+        <p></p>
+        Rozgość się.</p>,
+      footer: 'Copyright 2022',
+      confirmButtonText: <h3>Okej!</h3>,
+      confirmButtonColor: '#7189ff',
+      width: 600,
+      padding: '3em',
+      color: '#7189ff',
+      iconHtml: <img src={tomjerry} alt="xd" height={150} width= {400}/>,
+    })
+}
+
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <img
-              src={logo}
-              alt="logo"
-              width={125}
-            />
+            <img src={logo} alt="logo" width={100} />
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FontAwesomeIcon icon={faBars} />
@@ -41,22 +54,10 @@ const Navbar = ({toggle}) => {
               <NavLinks to="#contact">Kontakt</NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            MySwal.fire({
-              title: <p>Cześć!</p>,
-              text: 'Witaj na naszej stronie.'
-              imageUrl: '',
-              imageWidth: 400,
-              imageHeight: 200,
-              imageAlt: 'Custom image',
-              didOpen: () => {
-
-              }
-              MySwal.clickConfirm()
-            }
-            ).then(() => {
-              return MySwal.fire(<p>elegancko</p>)
-            })
+          <NavBtn onClick={launchAlert}>
+            <NavBtnLink>
+              Witaj!
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
@@ -64,7 +65,12 @@ const Navbar = ({toggle}) => {
   );
 };
 
+
+
+
+
 export default Navbar;
+
 
 const Nav = styled.nav`
   background: #000;
@@ -117,9 +123,8 @@ const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
-    
-    margin-top: 10px;
 
+    margin-top: 10px;
   }
 `;
 
@@ -147,8 +152,7 @@ const NavLinks = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
-  &.active {
+  [] &.active {
     border-bottom: 3px solid #7189ff;
   }
 `;
@@ -181,3 +185,4 @@ const NavBtnLink = styled(Link)`
     color: #b9d3e2;
   }
 `;
+
