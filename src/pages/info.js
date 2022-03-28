@@ -19,7 +19,7 @@ const AboutInfo = () => {
     <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       
-    <AboutContainer lightBg='false' id='info'>
+    <AboutContainer lightBg='false'>
     <AboutWrapper>
       <AboutRow imgStart='true'>
         <Column1>
