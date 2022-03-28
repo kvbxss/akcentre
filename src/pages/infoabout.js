@@ -21,17 +21,17 @@ const AboutInfo = () => {
       
     <AboutContainer lightBg='false' id='/info'>
     <AboutWrapper>
-      <AboutRow imgStart={imgStart}>
+      <AboutRow imgStart='true'>
         <Column1>
           <TextWrapper>
-            <TopLine>{topLine}</TopLine>
-            <Heading lightText='true'>Trochę o AKCentrum</Heading>
-            <Subtitle darkText='false'>{description}</Subtitle>
+            <TopLine>Trochę</TopLine>
+            <Heading lightText='true'>O AKCentrum</Heading>
+            <Subtitle darkText='false'>Hablablalb</Subtitle>
           </TextWrapper>
         </Column1>
         <Column2>
           <ImgWrap>
-            <Img src={img} alt={alt} />
+            <Img src='require("../assets/images/svg-4.svg").default' alt='img' />
           </ImgWrap>
         </Column2>
       </AboutRow>
