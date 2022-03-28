@@ -17,7 +17,7 @@ const Footer = ({children}) => {
         </FooterDesc>
         <FooterLinkItems>
           <FooterLinkTitle>Skontaktuj się z nami</FooterLinkTitle>
-          <FooterLink to="/about">Kontakt</FooterLink>
+          <FooterLink to="/contact">Kontakt</FooterLink>
           <FooterLink to="/">Wsparcie</FooterLink>
           <FooterLink to="/">Lokalizacja</FooterLink>
           <FooterLink to="/">Sponsoring</FooterLink>
