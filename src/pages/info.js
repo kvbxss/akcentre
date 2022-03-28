@@ -1,24 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { GlobalStyle } from "../components/styles/GlobalStyles";
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
 import styled from "styled-components";
 
 const AboutInfo = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-      setIsOpen(!isOpen);
-    };
-
+  
 
 
   return (
     <>
     <GlobalStyle></GlobalStyle>
-    <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      
+    
     <AboutContainer lightBg='false'>
     <AboutWrapper>
       <AboutRow imgStart='true'>
