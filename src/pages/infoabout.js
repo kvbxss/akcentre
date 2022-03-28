@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from "react";
+import { GlobalStyle } from "../components/styles/GlobalStyles";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
-const AboutSection = () => {
+const AboutInfo = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+      setIsOpen(!isOpen);
+    };
+
+
+
   return (
     <>
+    <GlobalStyle></GlobalStyle>
+    <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      
     <AboutContainer lightBg='false' id='/info'>
     <AboutWrapper>
       <AboutRow imgStart={imgStart}>
@@ -25,7 +40,7 @@ const AboutSection = () => {
   )
 };
 
-export default AboutSection;
+export default AboutInfo;
 
 const AboutContainer = styled.div`
   color: #fff;
