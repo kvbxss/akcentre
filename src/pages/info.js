@@ -1,7 +1,8 @@
 import React from "react";
 import { GlobalStyle } from "../components/styles/GlobalStyles";
 import styled from "styled-components";
-
+import HomeBar from "../components/HomeBar";
+import Home from ".";
 const AboutInfo = () => {
   
 
@@ -9,7 +10,7 @@ const AboutInfo = () => {
   return (
     <>
     <GlobalStyle></GlobalStyle>
-    
+    <HomeBar></HomeBar>
     <AboutContainer lightBg='false'>
     <AboutWrapper>
       <AboutRow imgStart='true'>
