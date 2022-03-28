@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GlobalStyle } from "../components/styles/GlobalStyles";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
+import styled from "styled-components";
 
 const AboutInfo = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +41,7 @@ const AboutInfo = () => {
   )
 };
 
-export default AboutInfo;
+
 
 const AboutContainer = styled.div`
   color: #fff;
@@ -133,3 +134,5 @@ const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
+
+export default AboutInfo;
