@@ -3,7 +3,7 @@ import React from 'react'
 const AboutSection = () => {
   return (
     <>
-    <AboutContainer lightBg='false' id='info'>
+    <AboutContainer lightBg='false' id='/info'>
     <AboutWrapper>
       <AboutRow imgStart={imgStart}>
         <Column1>
