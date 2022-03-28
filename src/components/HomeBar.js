@@ -9,7 +9,6 @@ const HomeBar = () => {
   return (
     <Homebar>
         <HomebarContainer>
-        <FontAwesomeIcon icon={faArrowAltCircleLeft} />
         <HomeLogo to="/">
             <img src={logo} alt="logo" width={100} />
           </HomeLogo>
@@ -49,7 +48,7 @@ const HomebarContainer = styled.div`
 
 const HomeLogo = styled(Link)`
   color: #fff;
-  justify-self: flex-start;
+  justify-self: start;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
