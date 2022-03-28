@@ -22,7 +22,7 @@ const launchAlert= () => {
       width: 600,
       padding: '3em',
       color: '#7189ff',
-      iconHtml: <img src={tomjerry} alt="xd" height={150} width= {400}/>,
+      iconHtml: <img src={tomjerry} alt="xd" height={70} width= {200}/>,
     })
 }
 
