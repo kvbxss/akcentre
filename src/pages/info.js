@@ -12,7 +12,7 @@ const AboutInfo = () => {
       <HomeBar></HomeBar>
       <AboutContainer lightBg="false">
         <AboutWrapper>
-          <AboutRow src="../assets/images/team.jpg">
+          <AboutRow imgStart="../assets/images/team.jpg">
             <Column1>
               <TextWrapper>
                 <TopLine>Trochę</TopLine>
