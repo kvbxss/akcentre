@@ -5,7 +5,7 @@ import "@fontsource/encode-sans-condensed"
 export const GlobalStyle = createGlobalStyle`
     *{
         font-family: 'Encode Sans Condensed';
-        font-style: italic;
+        font-style: normal;
         font-weight: 400;
         margin: 0;
         
