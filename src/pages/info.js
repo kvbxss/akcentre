@@ -3,37 +3,48 @@ import { GlobalStyle } from "../components/styles/GlobalStyles";
 import styled from "styled-components";
 import HomeBar from "../components/HomeBar";
 import Home from ".";
+import Footer from "../components/Footer";
+
 const AboutInfo = () => {
-  
-
-
   return (
     <>
-    <GlobalStyle></GlobalStyle>
-    <HomeBar></HomeBar>
-    <AboutContainer lightBg='false'>
-    <AboutWrapper>
-      <AboutRow imgStart='true'>
-        <Column1>
-          <TextWrapper>
-            <TopLine>Trochę</TopLine>
-            <Heading lightText='true'>O AKCentrum</Heading>
-            <Subtitle darkText='false'>Hablablalb</Subtitle>
-          </TextWrapper>
-        </Column1>
-        <Column2>
-          <ImgWrap>
-            <Img src='require("../assets/images/svg-4.svg").default' alt='img' />
-          </ImgWrap>
-        </Column2>
-      </AboutRow>
-    </AboutWrapper>
-  </AboutContainer>
-</>
-  )
+      <GlobalStyle></GlobalStyle>
+      <HomeBar></HomeBar>
+      <AboutContainer lightBg="false">
+        <AboutWrapper>
+          <AboutRow src="../assets/images/team.jpg">
+            <Column1>
+              <TextWrapper>
+                <TopLine>Trochę</TopLine>
+                <Heading lightText="true">O AKCentrum</Heading>
+                <Subtitle darkText="false">
+                  {" "}
+                  Jesteśmy zespołem fizjoterapeutów, trenerów i dietetyków z
+                  wieloletnim doświadczeniem, których pasją jest poprawa jakości
+                  życia klientów. Kierujemy się zasadą, że każdy klient wymaga
+                  indywidualnego podejścia uwzględniającego jego kondycję
+                  fizyczną i psychiczną. Jesteśmy specjalistami, dla których
+                  najważniejsze jest zdrowie i dobre samopoczucie naszych
+                  klientów. Nie szukamy dróg na skróty- stawiamy na bezpieczne
+                  osiągnięcie długotrwałego efektu.
+                </Subtitle>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img
+                  src='require("../assets/images/svg-4.svg").default'
+                  alt="img"
+                />
+              </ImgWrap>
+            </Column2>
+          </AboutRow>
+        </AboutWrapper>
+      </AboutContainer>
+      <Footer />
+    </>
+  );
 };
-
-
 
 const AboutContainer = styled.div`
   color: #fff;
