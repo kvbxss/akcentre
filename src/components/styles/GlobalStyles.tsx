@@ -1,13 +1,11 @@
 import {createGlobalStyle} from 'styled-components'
-import "@fontsource/annie-use-your-telescope"
-import "@fontsource/ostrich-sans"
 import "@fontsource/encode-sans-condensed"
-import "@fontsource/roboto"
+import "@fontsource/bubbler-one"
 export const GlobalStyle = createGlobalStyle`
     *{
-        font-family: 'Roboto';
+        font-family: 'Bubbler-One';
         font-style: normal;
-        font-weight: 100;
+        font-weight: 400;
         margin: 0;
         
     }

@@ -18,6 +18,7 @@
   "license": "0BSD",
   "dependencies": {
     "@fontsource/annie-use-your-telescope": "^4.5.0",
+    "@fontsource/bubbler-one": "^4.5.7",
     "@fontsource/encode-sans-condensed": "^4.5.0",
     "@fontsource/open-sans": "^4.5.0",
     "@fontsource/ostrich-sans": "^4.5.0",
