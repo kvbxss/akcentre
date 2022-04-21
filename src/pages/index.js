@@ -27,7 +27,7 @@ const Home = () => {
   
   return (
     <>
-    <GlobalStyle>
+    <GlobalStyle></GlobalStyle>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
@@ -37,7 +37,7 @@ const Home = () => {
       <Services />
       <InfoSection {...homeOBJfour} />    
       <Footer />
-      </GlobalStyle>
+      
     </>
     
   ); 
