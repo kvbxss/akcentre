@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     *{
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 300;
+        font-weight: 100;
         margin: 0;
         
     }
