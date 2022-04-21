@@ -12,7 +12,7 @@ const AboutInfo = () => {
       <HomeBar></HomeBar>
       <AboutContainer lightBg="false">
         <AboutWrapper>
-          <AboutRow imgStart="../assets/images/team.jpg">
+          <AboutRow imgStart="true">
             <Column1>
               <TextWrapper>
                 <TopLine>Trochę</TopLine>
@@ -33,7 +33,7 @@ const AboutInfo = () => {
             <Column2>
               <ImgWrap>
                 <Img
-                  src='require("../assets/images/svg-4.svg").default'
+                  src='require("../assets/images/svg-11.svg")'
                   alt="img"
                 />
               </ImgWrap>

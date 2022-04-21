@@ -28,8 +28,6 @@ const Footer = ({children}) => {
           <FooterLinkTitle>Social Media</FooterLinkTitle>
           <FooterLink to="/">Facebook</FooterLink>
           <FooterLink to="/">Instagram</FooterLink>
-          <FooterLink to="/">Lokalizacja</FooterLink>
-          <FooterLink to="/">Sponsoring</FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
     </FooterContainer>
