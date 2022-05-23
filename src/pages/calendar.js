@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import { GlobalStyle } from "../components/styles/GlobalStyles";
 import HomeBar from "../components/HomeBar";
 import Footer from "../components/Footer";
@@ -14,15 +14,12 @@ import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import "@fullcalendar/daygrid/main.css";
 import "@fullcalendar/timegrid/main.css";
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import Button from 'react-bootstrap/Button';
-// import Modal from'react-bootstrap/Modal'
+
+
 
 const BookingCalendar = () => {
 
-    // const [displayModal, setDisplayModal] = useState(false);
-    // const [eventModal, setEventModal] = useState([]);
-    // const hideModal = () => setDisplayModal(false);
+ 
   
 
   return ( 
@@ -30,30 +27,7 @@ const BookingCalendar = () => {
     <GlobalStyle></GlobalStyle>
     <HomeBar></HomeBar>
   
-       {/* {
-         eventModal.map( (event, id) =>(
-          <Modal show={displayModal} onHide={hideModal} key={id}>
-          <Modal.Header closeButton>
-            <Modal.Title>Trening</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h4>{event.title}</h4>
-            <h4>{event.website}</h4>
-            <p>{event.start.toString()}</p>
-            <p>{event.allDay.toString()}</p>
-            </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={hideModal}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={hideModal}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-           </Modal>
-         ))
-         
-       }  */}
+       
          <CalendarContainer lightBg="true">
         <CalendarWrapper>
           <FullCalendar
@@ -70,13 +44,6 @@ const BookingCalendar = () => {
                         googleCalendarId:"suh24jba9jmae5npn329rcd8bk@group.calendar.google.com"
                       },
                 ]}
-              // eventClick={(e)=>{
-              //   if(e){
-              //     setDisplayModal(true)
-              //     setEventModal([e.event])
-              //     console.log(e.event)
-              //   }
-              // }}
             />
           </CalendarWrapper>
       </CalendarContainer>
