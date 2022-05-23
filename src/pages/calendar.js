@@ -3,6 +3,7 @@ import { GlobalStyle } from "../components/styles/GlobalStyles";
 import HomeBar from "../components/HomeBar";
 import Footer from "../components/Footer";
 import styled from "styled-components";
+import Loadable from "react-loadable";
 
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
@@ -21,6 +22,14 @@ const BookingCalendar = () => {
 
  
   
+  const LoadableCalendar = Loadable({
+    loader: () => import('@fullcalendar/react'),
+    loading: () => <div>Loading...</div>,
+    render(loaded, props) {
+        let Cal = loaded.default;
+        return <Cal {...props} />
+    }
+  })
 
   return ( 
     <>
@@ -30,7 +39,7 @@ const BookingCalendar = () => {
        
          <CalendarContainer lightBg="true">
         <CalendarWrapper>
-          <FullCalendar
+          <LoadableCalendar
               defaultView="dayGridMonth"
               header={{
                 left: "today, prev,next",
