@@ -18,7 +18,7 @@ const Footer = ({children}) => {
         <FooterLinkItems>
           <FooterLinkTitle>Skontaktuj się z nami</FooterLinkTitle>
           <FooterLink to="/contact">Kontakt</FooterLink>
-          <FooterLink to="/">Wsparcie</FooterLink>
+          <FooterLink to="https://www.termsfeed.com/live/cd71dbd8-6787-417d-af09-3e68f91f2b66">Polityka Prywatności</FooterLink>
           <FooterLink to="/">Lokalizacja</FooterLink>
           <FooterLink to="/">Sponsoring</FooterLink>
         </FooterLinkItems>

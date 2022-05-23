@@ -2,8 +2,8 @@ import React from "react";
 import { GlobalStyle } from "../components/styles/GlobalStyles";
 import styled from "styled-components";
 import HomeBar from "../components/HomeBar";
-import Home from ".";
 import Footer from "../components/Footer";
+import img from "../assets/images/svg-11.svg"
 
 const AboutInfo = () => {
   return (
@@ -33,7 +33,7 @@ const AboutInfo = () => {
             <Column2>
               <ImgWrap>
                 <Img
-                  src='require("../assets/images/svg-11.svg")'
+                  src= {img}
                   alt="img"
                 />
               </ImgWrap>

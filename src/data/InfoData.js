@@ -33,7 +33,7 @@ export const homeOBJthree = {
   dark:true,
   primary: true,
   darkText: false,
-  Link: '/BookingCalendar'
+  Link: '/calendar'
 };
 
 export const homeOBJtwo = {
@@ -52,7 +52,7 @@ export const homeOBJtwo = {
   dark: false,
   primary: false,
   darkText: true,
-  
+  Link: '/calendar'
 };
 
 export const homeOBJfour = {
