@@ -44,8 +44,8 @@ export const homeOBJtwo = {
   topLine: "Treningi",
   headline: "Trening to podstawa",
   description:
-    "Wybierz odpowiedni dla siebie trening i umów się na określoną godzinę.",
-  buttonLabel: "Wybierz trening",
+    "Wybierz odpowiedni dla siebie trening spośród naszych usług, przejrzyj kalendarz i daj nam znać poprzez formularz kontaktowy :).",
+  buttonLabel: "Zobacz Kalendarz",
   imgStart: true,
   img: require("../assets/images/svg-3.svg").default,
   alt: "trainings",

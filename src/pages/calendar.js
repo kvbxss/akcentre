@@ -3,6 +3,8 @@ import { GlobalStyle } from "../components/styles/GlobalStyles";
 import HomeBar from "../components/HomeBar";
 import Footer from "../components/Footer";
 import styled from "styled-components";
+
+//aby ominac bug z webpackami przy deployu do clouda
 import Loadable from "react-loadable";
 
 import FullCalendar from "@fullcalendar/react";
