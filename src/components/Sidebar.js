@@ -43,6 +43,9 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="#trainings" onClick={toggle}>
             Treningi
           </SidebarLink>
+          <SidebarLink to="#services" onClick={toggle}>
+            Usługi
+          </SidebarLink>
           <SidebarLink to="#contact" onClick={toggle}>
             Kontakt
           </SidebarLink>
