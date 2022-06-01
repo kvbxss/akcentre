@@ -153,7 +153,7 @@ const Services = () => {
           <ServicesIcon src={Icon5} />
           <ServicesH2>Diagnostyka</ServicesH2>
           <ServicesP>
-          i konsultacje fizjoterapeutyczne
+          
           </ServicesP>
         </ServicesCard>
         <ServicesCard onClick={launchAlert6}>
